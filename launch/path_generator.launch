@@ -1,0 +1,6 @@
+<launch>
+
+    	<node name="path_generator" pkg="path_generator" type="path_generator" output="screen"/>
+
+	<node name="rviz" pkg="rviz" type = "rviz" args="-d $(find path_generator)/rviz/path.rviz" />
+</launch>
